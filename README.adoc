@@ -1,3 +1,12 @@
+== Note
+Seeing the problems that people had redeeming deposits due to problems with the electrum server, I've deployed a forked version of the tbtc dapp that uses alternative electrum servers at https://tbtc-forked-dapp.github.io/
+
+Currently it is using blockstream's server, but I've modified the code and set up a proxy server (see https://github.com/corollari/wss2tcp) to allow it to work with any public electrum server (before it would only work with servers that had websockets enabled, but this is very rare and I couldn't find any).
+
+Finally, if you don't trust me it's pretty easy to audit the forked website and verify that I haven't altered anything important, you only have to check the last diverging commits on this repository. This is because the app is hosted through github pages on a github.io domain and the code build is done on a github action, so as long as you trust github it should be possible to verify that the only changes made to the website are the ones caused by the last commits, which change a very low number of lines.
+
+
+
 :toc: macro
 
 = tBTC dApp
