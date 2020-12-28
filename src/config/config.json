@@ -2,8 +2,8 @@
   "1": {
     "bitcoinNetwork": "main",
       "electrum": {
-        "server": "electrumx-server.tbtc.network",
-        "port": 8443,
+        "server": "wss2tcp.herokuapp.com/tcp/electrum.blockstream.info/50001/ignore",
+        "port": 50001,
         "protocol": "wss"
       }
   },
